@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html, body, #map {
+        margin: 1%;
+        padding: 10;
+        height: 90%;
+      }
+    </style>
+    <script type="text/javascript">
+      window.onload = function () {
+          angular.element(document.getElementById('map')).scope().myFunction();
+      };
+
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <script src="app.js"></script>
+    
+  </head>
+  <body ng-app="tweetmap" ng-controller="initialize">
+    <div id="map" >
+
+    </div>
+    <div class="list-group">
+      <div class="list-group-item">
+        <ul class="nav nav-pills">
+          <li>
+            <form name="reviewForm">
+              <fieldset class="form-group">
+                <input type="text" required class="form-control" placeholder="Whats on your mind !!" title="Search Tweet" />
+              </fieldset>
+              <fieldset class="form-group">
+                <input type="submit" class="btn btn-primary pull-centre" value="Search" />
+              </fieldset>
+            </form>
+          </li>
+      </ui>
+      </div>
+    </div>
+
+
+  </body>
+</html>
